@@ -1,0 +1,30 @@
+
+
+tempalte literals can be saved as `${} `  where we can put the variable inside ${}.
+
+type conversion 
+    age='10'; This is a string
+    console.log(Number(age)+6); This will convert string to int and perform the addition
+
+type coercion 
+    done automatically by js
+    '+' operator converts numbers to strings.
+        ex: console.log('15'+6) will give 156.
+    '-' and '/' operator convert strings to numbers.
+        ex: console.log('15'-6) will give 9    
+
+NaN stands for Not a Number. This is given when we try to convert alphabets, strings to number using type conversion.
+
+5 falsy values 
+    0, '',undefined,null,NaN
+
+== is loose and allows type coercion
+    '18' == 18 returns true.
+
+=== is strict and doesn't perform type coercion
+    '18' === 18 returns false.
+
+the prompt function stores data as a string.
+    ex: const number = prompt("Enter a number"); stores number as a string
+    this can be changed using 
+        const number = Number(prompt("Enter the number"));
