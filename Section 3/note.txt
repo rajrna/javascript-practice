@@ -1,0 +1,6 @@
+strict mode can be toggled with
+        'use strict';
+
+functions without names are known as anonymous functions.
+
+function decalrations can be called before they are defined but same cannot be done with function expressions.

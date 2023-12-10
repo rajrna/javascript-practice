@@ -8,7 +8,7 @@ console.log(continent);
 
 const isIsland = false;
 let language;
-language = 'Nepali';
+language = 'English';
 
 console.log(isIsland);
 console.log(language);
@@ -38,6 +38,7 @@ if (population > 30000) {
 } else {
     console.log(`${country}'s population is ${30000 - population} below average`);
 }
+
 /*
     4
     1317-19
@@ -46,14 +47,41 @@ if (population > 30000) {
     1143
 */
 
-const numNeighbours = prompt('How many neighbours does your country have?');
-if (numNeighbours == 1) {
-    console.log("only one border");
-}
-else if (numNeighbours > 1) {
-    console.log("more than 1");
+// const numNeighbours = Number(prompt('How many neighbours does your country have?'));
+// if (numNeighbours === 1) {
+//     console.log("only one border");
+// }
+// else if (numNeighbours > 1) {
+//     console.log("more than 1");
+// } else {
+//     console.log('No borders');
+// }
+
+if (language = 'English' && population < 50000 && !isIsland) {
+    console.log(`You should live in ${country} :p`);
+} else {
+    console.log(`${country} doesn't meet the criteria`);
 }
 
+
+switch (language) {
+    case 'chinese':
+        console.log('Most number of native speakers');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'English':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    default:
+        console.log("great lanuage as well my guy");
+}
+
+console.log(`${country}'s population is ${population > 3000 ? 'above' : 'below'} average`);
 
 // const ageRaj = 21;
 // const ageEk = 22;
