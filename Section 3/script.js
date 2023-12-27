@@ -47,3 +47,38 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(2000);
 console.log(age2, ekAge);
+
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(2002);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years `;
+}
+
+console.log(yearsUntilRetirement(2002, 'Ek'));
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} apples and ${orangePieces} oranges `;
+    return juice;
+}
+fruitProcessor(4, 3);
+
+
+
+const friends = ['quagmire', 'joe', 'peter', 'cleveland'];
+
+console.log(friends[0]);
+console.log(friends.length);
+
+friends[3] = 'that guy';
+console.log(friends);
