@@ -27,3 +27,26 @@ scoreKoalas = calcAverage(23, 34, 29);
 console.log(scoreDolphins, scoreKoalas);
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+
+
+//challenge 2
+
+function calcTip(billValue) {
+    if (billValue >= 50 && billValue <= 300) {
+        let tip = (15 / 100) * billValue;
+        return tip;
+    }
+    else {
+        let tip = (20 / 100) * billValue;
+        return tip;
+    }
+}
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+let tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(tips);
+console.log(totals);

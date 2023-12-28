@@ -82,3 +82,17 @@ console.log(friends.length);
 
 friends[3] = 'that guy';
 console.log(friends);
+
+
+//add elements to last
+friends.push('Cleveland');
+//add elements to front
+friends.shift('Brian');
+console.log(friends);
+
+//remove elements
+friends.pop();
+console.log(friends);
+
+console.log(friends.indexOf('Brian'));
+console.log(friends.includes('Brian'));
