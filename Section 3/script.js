@@ -96,3 +96,27 @@ console.log(friends);
 
 console.log(friends.indexOf('Brian'));
 console.log(friends.includes('Brian'));
+
+const luffy = {
+    firstName: 'Luffy',
+    lastName: 'Monkey',
+    occupation: 'Pirate',
+    crewmates: [Zoro, Nami, Ussop, Sanji]
+};
+
+console.log(luffy.lastName);
+console.log(luffy['lastName']);
+
+const nameKey = "Name";
+console.log(luffy['first' + nameKey]);
+console.log(luffy['last' + nameKey]);
+
+const interstedIn = propmt("What do you want to learn about luffy: firstName, lastName, occupation, crewmates");
+console.log(luffy[interstedIn]);
+
+
+luffy.location = 'New World';
+luffy['crewName'] = 'strawhatPirates';
+console.log(luffy);
+
+console.log(`${luffy.firstName} has ${luffy.crewmates.length} friends, and his first crewmate is ${luffy.crewmates[0]}`)
