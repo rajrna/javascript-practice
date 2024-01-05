@@ -120,3 +120,72 @@ luffy['crewName'] = 'strawhatPirates';
 console.log(luffy);
 
 console.log(`${luffy.firstName} has ${luffy.crewmates.length} friends, and his first crewmate is ${luffy.crewmates[0]}`)
+
+for (let j = 0; j <= 5; j++) {
+    console.log(`Number ${j}`);
+}
+
+const types = [];
+
+const luffy = {
+    firstName: 'Luffy',
+    lastName: 'Monkey',
+    occupation: 'Pirate',
+    crewmates: [Zoro, Nami, Ussop, Sanji]
+};
+for (let i = 0; i <= luffy.length; i++) {
+    console.log(luffy[i], typeof luffy[i]);
+
+    //types[i] = typeof luffy[i];
+    types.push(typeof jonas[i]);
+
+}
+
+const years = [2001, 2002, 2003, 2004];
+const ages = [];
+
+for (i = 0; i <= years.length; i++) {
+    let age = 2023 - years[i];
+    ages.push(age);
+}
+
+console.log(ages);
+
+for (i = 0; i < jonas.length; i++) {
+    if (typeof jonas[i] != 'string') continue;
+
+    console.log(jonas[i], typeof jonas[i]);
+}
+
+const jonas = [
+    'jonas',
+    'schedmann',
+    2020 - 2010,
+    'teacher',
+    ['michael', 'franklin', 'trevor']
+];
+
+for (i = jonas.length - 1; i >= 0; i--) {
+    console.log(jonas[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`starting exercise ${exercise}`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(`lifting weight repition ${rep} (❁'◡'❁) `);
+    }
+}
+
+rep = 1;
+while (rep <= 10) {
+    console.log(`WHILE : Lifting weights repition ${rep}`);
+    rep++;
+}
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}

@@ -47,3 +47,38 @@ console.log(`${luffy.firstName} has ${luffy.crewmates.length} friends, and his f
 console.log(luffy.calcAge2());
 console.log(luffy.age);
 console.log(luffy.getSummary());
+
+//challenge 3
+
+/* Write your code below. Good luck! 🙂 */
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+
+
+for (let i = 0; i <= bills.length; i++) {
+    const calcTip = function (bill) {
+        return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+    }
+    tips.push(calcTip(bills[i]));
+    totals.push(tips[i] + bills[i]);
+}
+
+
+console.log(tips);
+console.log(totals);
+
+//bonus
+/* const arr = [10, 200, 300, 40];
+
+    let sum = 0;
+    for(i=0; i<= arr.length; i++) {
+        const calcAverage = function(arr) {
+        sum = sum+arr[i];
+        }
+    }
+    let average = sum/(arr.length);
+    console.log(average);
+*/

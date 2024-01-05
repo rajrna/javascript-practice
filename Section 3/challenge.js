@@ -80,3 +80,6 @@ if (john.calcBMI() > mark.calcBMI()) {
 else {
     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})!`);
 }
+
+//challege 3
+
