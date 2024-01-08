@@ -1,0 +1,8 @@
+
+
+querySelector used to select elements
+ use ('.className') to select class
+ use ('#idName') to select id
+
+use ('.className').textContent  to change text value 
+use ('.className').value to change value in input fields
