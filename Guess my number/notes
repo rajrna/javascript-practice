@@ -6,3 +6,6 @@ querySelector used to select elements
 
 use ('.className').textContent  to change text value 
 use ('.className').value to change value in input fields
+
+use something.classList.add() to add and classList.remove remove classes instead of changing each property
+use .classList.toggle() to add classes if it doesnt have it and remove if it has it
